@@ -1,0 +1,35 @@
+body {
+    color: var(--dark-color);
+    background: var(--section-color);
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+
+    letter-spacing: 0.04em;
+}
+
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+
+    // @include min320 {
+    //     width: 320px;
+    // }
+
+    // @include min768 {
+    //     width: 768px;
+    //     padding: 0 34px;
+    // }
+
+    // @include min1360 {
+    //     width: 1110px;
+    //     padding: 0 30px;
+    // }
+}
+
+.section-title {
+    font-family: 'Titan One', sans-serif;
+
+    text-transform: uppercase;
+}
