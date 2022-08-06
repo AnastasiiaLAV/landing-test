@@ -1,6 +1,8 @@
 *,
 *::after,
 *::before {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 html {
@@ -47,6 +49,7 @@ ul {
 img {
     display: block;
     max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -56,4 +59,10 @@ a {
 
 button {
     cursor: pointer;
+    border: none;
+}
+
+input,
+textarea {
+    outline: none;
 }

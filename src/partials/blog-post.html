@@ -1,0 +1,40 @@
+<section class="blog" id="blog">
+  <div class="container blog__container">
+    <picture class="blog__picture">
+      <source
+        type="image/webp"
+        srcset="
+          ./images/images/home/blog.webp    1x,
+          ./images/images/home/blog@2x.webp 2x
+        "
+      />
+      <img
+        src="./images/images/home/blog.jpg"
+        srcset="
+          ./images/images/home/blog.jpg    1x,
+          ./images/images/home/blog@2x.jpg 2x
+        "
+        alt="blog"
+        width="320"
+        height="220"
+        class="blog__img img"
+      />
+    </picture>
+    <div class="blog__text-wrapper">
+      <p class="blog__pre-title">April 16 2020</p>
+      <h2 class="blog__title">Blog Post One</h2>
+      <p class="blog__text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate,
+        ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum
+        illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste
+        maiores deleniti?
+      </p>
+      <button class="blog__btn btn">
+        <svg class="btn__icon" width="8" height="11">
+          <use href="./images/sprite.svg#icon-arrow"></use>
+        </svg>
+        Read Our Blog
+      </button>
+    </div>
+  </div>
+</section>

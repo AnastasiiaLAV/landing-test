@@ -1,0 +1,51 @@
+<section class="contact" id="contact">
+  <div class="container contact__container">
+    <picture class="contact__picture">
+      <source
+        type="image/webp"
+        srcset="
+          ./images/images/home/contact.webp    1x,
+          ./images/images/home/contact@2x.webp 2x
+        "
+      />
+      <img
+        src="./images/images/home/contact.jpg"
+        srcset="
+          ./images/images/home/contact.jpg    1x,
+          ./images/images/home/contact@2x.jpg 2x
+        "
+        alt="contact"
+        width="320"
+        height="220"
+        class="contact__img img"
+      />
+    </picture>
+    <div class="contact__form-wrapper">
+      <form action="" class="form">
+        <h2 class="form__title">Request Callback</h2>
+        <label class="form-label">
+          <input
+            type="text"
+            class="form-input"
+            name="user-name"
+            placeholder="Enter your name"
+            required
+            minlength="2"
+            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+          />
+        </label>
+        <label class="form-label">
+          <input
+            type="email"
+            class="form-input"
+            name="user-email"
+            placeholder="Enter email*"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+        </label>
+        <button class="hero__btn btn">Send</button>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+// .header {
+//     position: absolute;
+//     z-index: 3;
+//     top: 6px;
+//     width: 100%;
+//     background-color: transparent;
+
+//     @include min768 {
+//         top: 37px;
+//     }
+// }
+
+// .header-container {
+//     @include flex(flex, space-between, center);
+
+//     @include min1280 {
+//         position: relative;
+//         height: 50px;
+//     }
+// }
