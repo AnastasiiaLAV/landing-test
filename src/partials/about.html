@@ -1,40 +1,38 @@
 <section class="about" id="about">
+  <picture class="about__picture">
+    <source
+      type="image/webp"
+      srcset="
+        ./images/images/home/people.webp    1x,
+        ./images/images/home/people@2x.webp 2x
+      "
+    />
+    <img
+      src="./images/images/home/people.jpg"
+      srcset="
+        ./images/images/home/people.jpg    1x,
+        ./images/images/home/people@2x.jpg 2x
+      "
+      alt="people"
+      width="320"
+      height="220"
+      class="about__img img"
+    />
+  </picture>
   <div class="container about__container">
-    <picture class="about__picture">
-      <source
-        type="image/webp"
-        srcset="
-          ./images/images/home/people.webp    1x,
-          ./images/images/home/people@2x.webp 2x
-        "
-      />
-      <img
-        src="./images/images/home/people.jpg"
-        srcset="
-          ./images/images/home/people.jpg    1x,
-          ./images/images/home/people@2x.jpg 2x
-        "
-        alt="people"
-        width="320"
-        height="220"
-        class="about__img img"
-      />
-    </picture>
-    <div class="about__text-wrapper">
-      <p class="about__pre-title">What you are looking for</p>
-      <h2 class="about__title">We provide bespoke solutions</h2>
-      <p class="about__text">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate,
-        ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum
-        illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste
-        maiores deleniti?
-      </p>
-      <button class="about__btn btn">
-        <svg class="btn__icon" width="8" height="11">
-          <use href="./images/sprite.svg#icon-arrow"></use>
-        </svg>
-        Read More
-      </button>
-    </div>
+    <p class="pre-title">What you are looking for</p>
+    <h2 class="title">We provide bespoke solutions</h2>
+    <p class="text">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum
+      dignissimos quae laudantium asperiores nam aliquid impedit harum illum
+      dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores
+      deleniti?
+    </p>
+    <button class="about__btn btn">
+      <svg class="btn__icon" width="8" height="11">
+        <use href="./images/sprite.svg#icon-arrow"></use>
+      </svg>
+      Read More
+    </button>
   </div>
 </section>

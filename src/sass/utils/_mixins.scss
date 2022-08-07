@@ -1,48 +1,55 @@
-@mixin font($fs,$fw,$lh) {
+@mixin font($fs, $fw, $lh) {
     font-size: $fs;
     font-weight: $fw;
     line-height: $lh;
 }
 
-// @mixin flex($dis, $jc, $ali) {
-//     display: $dis;
-//     justify-content: $jc;
-//     align-items: $ali;
-// }
+@mixin flex($dis, $jc, $ali) {
+    display: $dis;
+    justify-content: $jc;
+    align-items: $ali;
+}
 
-// @mixin min320 {
-//     @media screen and (min-width: 320px) {
-//         @content;
-//     }
-// }
+@mixin tel {
+    @media screen and (min-width: 320px) {
+        @content;
+    }
+}
 
-// @mixin min320-max767 {
-//     @media screen and (min-width: 320px) and (max-width: 767) {
-//         @content;
-//     }
-// }
+@mixin tel-tab {
+    @media screen and (min-width: 320px) and (max-width: 767) {
+        @content;
+    }
+}
 
-// @mixin min480 {
-//     @media screen and (min-width: 480px) {
-//         @content;
-//     }
-// }
+@mixin min480 {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
 
-// @mixin min768 {
-//     @media screen and (min-width: 768px) {
-//         @content;
-//     }
-// }
+@mixin tab {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
 
-// @mixin min768-max1359 {
-//     @media screen and (min-width: 768px) and (max-width: 1359px) {
-//         @content;
-//     }
-// }
+@mixin tab-desk {
+    @media screen and (min-width: 768px) and (max-width: 1359px) {
+        @content;
+    }
+}
 
-// @mixin min1360 {
-//     @media screen and (min-width: 1360px) {
-//         @content;
-//     }
-// }
+@mixin desk {
+    @media screen and (min-width: 1360px) {
+        @content;
+    }
+}
 
+@mixin retina {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        @content;
+    }
+}

@@ -1,0 +1,21 @@
+.features-list{
+    display: flex;
+    flex-wrap: wrap;
+    @include tab {
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+}
+
+.features-list__about{
+        @include font(12px, 400, (22 / 12));
+            @include tab {
+                @include font(14px, 400, (24 / 14));
+            }
+}
+
+.features-list__title{
+@include font(16px, 300, (26 / 16));
+}
