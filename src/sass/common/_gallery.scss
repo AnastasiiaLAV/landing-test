@@ -1,9 +1,11 @@
+.gallery__container{
+    padding-top: 0;
+}
 .gallery-list {
     display: grid;
     justify-items: center;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    padding: 40px 0;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
 .gallery-list__item{
@@ -13,7 +15,6 @@
         transition: 0.3s ease-out;
         transform: scale(1.01);
         border-radius: 4px;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
-                rgba(0, 0, 0, 0.5) 0px 2px 15px 0px;
+        box-shadow: $box-shadow;
     }
 }

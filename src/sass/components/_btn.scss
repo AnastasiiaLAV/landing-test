@@ -6,4 +6,9 @@
     @include tab{
         font-size: 18px;
     }
+    &:hover {
+        transform: scale(0.98);
+        filter: opacity(90%);
+        box-shadow: $box-shadow;
+    }
 }

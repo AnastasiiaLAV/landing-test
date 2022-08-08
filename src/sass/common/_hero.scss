@@ -4,17 +4,10 @@
         height: 533px;
         // left: 0px;
         // top: 0px;
-    
-        @include tab {
-            height: 1024px;
-        }
-    
-        @include desk {
-            height: 768px;
-        }
+    padding-top: 142px;
 
-        text-align: center;
-        color: $hero-text-color;
+    text-align: center;
+    color: $hero-text-color;
 
     background-color: #303030;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -35,6 +28,38 @@
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
             url(../src/images/images/home/showcase@2x.webp);
     }
-    
 
+        @include tab {
+            padding-top: 407px;
+            height: 1024px;
+        }
+    
+        @include desk {
+            padding-top: 279px;
+            height: 768px;
+        }
 }   
+
+.hero__title{
+    @include font(52px, 300, (66 / 52));
+    max-width: 241px;
+    margin: 0 auto 20px auto;
+    @include tab {
+        max-width: 493px;
+        margin: 0 auto 24px auto;
+    }
+}
+.hero__text{
+    min-width: 246px;
+@include font(22px, 400, (37 / 22));
+margin: 0 auto 24px auto;
+@include tab {
+        max-width: 493px;
+        margin: 0 auto 32px auto;
+    }
+}
+.hero__btn{
+    width: 156px;
+    height: 45px;
+    background: $accent-color;
+}

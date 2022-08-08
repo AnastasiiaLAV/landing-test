@@ -2,10 +2,13 @@
     background: $dark-color;
     text-align: center;
     color: $light-text-color;
+    padding: 20px 0;
+    max-width: 1360px;
+    margin: 0 auto;
 }
 
 .footer-social-list{
-    padding-top: 20px;
+    // padding-top: 20px;
     padding-bottom: 8px;
     @include tab{
         padding-bottom: 6px;

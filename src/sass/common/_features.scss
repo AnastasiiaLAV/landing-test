@@ -1,22 +1,25 @@
 .features-list{
-    display: flex;
+    @include flex(flex, space-around, null);
     flex-wrap: wrap;
-
     text-align: center;
-    padding: 40px 0;
     @include tab {
+        @include flex(flex, space-between, center);
             flex-wrap: nowrap;
-            align-items: center;
-            justify-content: space-between;
         }
     
 }
 
+.features-list__item{
+    margin-bottom: 10px;
+    max-width: 300px;
+    padding: 0 10px;
+}
+
 .features-list__about{
-        @include font(12px, 400, (22 / 12));
-            @include tab {
-                @include font(14px, 400, (24 / 14));
-            }
+    @include font(12px, 400, (22 / 12));
+        @include tab {
+            @include font(14px, 400, (24 / 14));
+        }
 }
 
 .features-list__title{

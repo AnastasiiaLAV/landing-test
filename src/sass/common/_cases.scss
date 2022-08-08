@@ -1,0 +1,13 @@
+.cases__container{
+    text-align: center;
+    padding-bottom: 20px;
+    @include tab{
+        padding-bottom: 24px;
+    }
+    & h2{
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+    }
+}

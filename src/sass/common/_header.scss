@@ -1,20 +1,56 @@
 .header {
-    // position: absolute;
-    // z-index: 3;
-    top: 6px;
+    position: absolute;
+    top: 0;
     width: 100%;
-    background-color: transparent;
     color: $light-text-color;
-    @include tab {
-        top: 37px;
-    }
 }
 
 .header-container {
+    background-color: transparent;
     @include flex(flex, space-between, center);
+    flex-wrap: wrap;
+    padding-top: 29px;
+    @include desk {
+        padding-top: 20px;
+    }
+}
+
+.header__link-list{
+    @include flex(flex, center, center);
+    flex-wrap: nowrap;
+}
+
+.header__list-item{
+    &+& {
+        margin-left: 12px;
+    }
+
+    @include tab {
+        &+& {
+            margin-left: 20px;
+        }
+    }
 
     @include desk {
-        position: relative;
-        height: 50px;
+        &+& {
+            margin-left: 40px;
+        }
     }
+}
+
+.logo{
+    margin-bottom: 12px;
+    &:hover{
+        transform: scale(1.02);
+        filter: opacity(90%);
+        text-shadow: $box-shadow;
+    }
+}
+
+.logo span{
+    @include font(32px, 400, (42/ 32));
+}
+
+.logo-finance{
+    color: $accent-color;
 }
