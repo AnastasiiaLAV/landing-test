@@ -1,6 +1,9 @@
 .features-list{
     display: flex;
     flex-wrap: wrap;
+
+    text-align: center;
+    padding: 40px 0;
     @include tab {
             flex-wrap: nowrap;
             align-items: center;

@@ -1,18 +1,29 @@
-@import './common/common';
+@import './base/common';
 
-@import "./utils/vars";
 @import "./base/reset";
+@import "./utils/vars";
 @import "./utils/mixins";
 @import "./utils/hidden";
 
 @import "./base/container";
 
-@import "./common/header";
-@import "./common/hero";
-@import "./common/features";
-@import "./common/about";
-
 @import "./components/btn";
 @import "./components/pre-title";
 @import "./components/title";
 @import "./components/text";
+@import "./components/social";
+@import "./components/form";
+
+@import "./common/header";
+@import "./common/hero";
+@import "./common/features";
+@import "./common/about";
+@import "./common/cases";
+@import "./common/gallery";
+@import "./common/blog-post";
+@import "./common/team";
+@import "./common/contact";
+@import "./common/footer";
+
+
+

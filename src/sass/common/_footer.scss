@@ -1,0 +1,20 @@
+.footer{
+    background: $dark-color;
+    text-align: center;
+    color: $light-text-color;
+}
+
+.footer-social-list{
+    padding-top: 20px;
+    padding-bottom: 8px;
+    @include tab{
+        padding-bottom: 6px;
+    }
+}
+
+.footer-social-link{
+    &:hover,
+    &:focus {
+            color: $accent-color;
+        }
+}
