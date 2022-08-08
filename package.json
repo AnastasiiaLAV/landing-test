@@ -2,9 +2,8 @@
   "name": "landing-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "homepage": "https://anastasiialav.github.io/landing-test/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /landing-test/"
   },
@@ -17,7 +16,6 @@
   "bugs": {
     "url": "https://github.com/AnastasiiaLAV/landing-test/issues"
   },
-  "homepage": "https://github.com/AnastasiiaLAV/landing-test#readme",
   "dependencies": {
     "lightbox2": "^2.11.3",
     "modern-normalize": "^1.1.0"
