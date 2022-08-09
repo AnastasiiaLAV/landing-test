@@ -1,21 +1,14 @@
 import refs from './refs'
 
+const isVisible = "is-visible";
+refs.send.addEventListener("click", openModal);
 
-// refs.form.addEventListener("submit", handleSubmit);
+refs.modalBackOut.addEventListener("click", closeModal);
 
-// export default function handleSubmit(event) {
-//   event.preventDefault();
-//   const {
-//     elements: { login, password }
-    
-//   } = event.currentTarget;
+export function openModal() {
+refs.modal.classList.add(isVisible);
+}
 
-//   if (login.value === "" || password.value === "") {
-//     return console.log("Please fill in all the fields!");
-//   }
-
-//   console.log(`Login: ${login.value}, Password: ${password.value}`);
-//     event.currentTarget.reset();
-    
-//     openModal();
-// }
+function closeModal() {
+        refs.modal.classList.remove(isVisible);
+}

@@ -34,5 +34,9 @@
 <path fill="#28a745" style="fill: var(--color2, #28a745)" d="M16 0h2l16 10v2h-34v-2l16-10z"></path>
 </symbol>
 
+<symbol id="icon-arrow-left" viewBox="0 0 20 20">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M3.828 9l6.071-6.071-1.414-1.414-8.485 8.485 8.485 8.485 1.414-1.414-6.071-6.071h16.172v-2h-16.172z"></path>
+</symbol>
+
 </defs>
 </svg>

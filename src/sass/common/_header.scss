@@ -21,7 +21,6 @@
 }
 
 .header__list-item{
-    // position: relative;
     &+& {
         margin-left: 12px;
     }
@@ -68,7 +67,7 @@ position: relative;
     margin-bottom: 12px;
     &:hover{
         transform: scale(1.02);
-        filter: opacity(90%);
+        filter: contrast(150%);
         text-shadow: $box-shadow;
     }
 }
@@ -82,7 +81,6 @@ position: relative;
 }
 
 .out {
-    // transform: translateY(-100%);
     position: fixed;
     z-index: 3;
     background-color: rgba(49, 49, 49, 0.8);

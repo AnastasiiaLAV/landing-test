@@ -21,21 +21,29 @@
   </picture>
   <div class="container contact__container">
     <div class="contact__form-wrapper">
-      <form action="" class="form" data-id="fotm">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        class="form"
+        data-id="form"
+      >
         <h2 class="title">Request Callback</h2>
         <div class="group">
-          <input type="text" required />
+          <input type="text" name="name" required />
           <span class="highlight"></span>
           <span class="bar"></span>
-          <label>Enter your name</label>
+          <label name="name">Enter your name</label>
         </div>
         <div class="group">
-          <input type="text" required />
+          <input type="email" name="email" required />
           <span class="highlight"></span>
           <span class="bar"></span>
-          <label>Enter email</label>
+          <label name="email">Enter your email</label>
         </div>
-        <button class="contact__btn btn" data-id="send">Send</button>
+        <button type="submit" class="contact__btn btn" data-id="send">
+          Send
+        </button>
       </form>
     </div>
   </div>

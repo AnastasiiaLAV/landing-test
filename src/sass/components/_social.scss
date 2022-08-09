@@ -1,8 +1,7 @@
 .social-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(flex, center, center);
 }
+
 
 .social-list__item {
     &+& {
