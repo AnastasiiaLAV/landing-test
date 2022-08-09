@@ -39,6 +39,9 @@
     border: 1px solid $light-text-color;
     background: $blog-color;
 
+    &:hover{
+        background-color: $blog-hover-btn-color;
+    }
     @include tab {
         width: 196px;
         height: 50px;

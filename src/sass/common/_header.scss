@@ -80,3 +80,12 @@ position: relative;
 .logo-finance{
     color: $accent-color;
 }
+
+.out {
+    // transform: translateY(-100%);
+    position: fixed;
+    z-index: 3;
+    background-color: rgba(49, 49, 49, 0.8);
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
