@@ -2,7 +2,7 @@
   "name": "landing-test",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://anastasiialav.github.io/landing-test/",
+
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /landing-test/"
